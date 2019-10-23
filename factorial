@@ -1,0 +1,9 @@
+#!/bin/bash
+#calculate the factorial of parameter 1 passed in to script
+factorial=1
+for (( count = 1; count <= $1; count++ ))
+do
+	factorial=$[ $factorial * count ]
+done
+echo The factorial of $1 is $factorial
+echo
